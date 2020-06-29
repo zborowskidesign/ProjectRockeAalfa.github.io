@@ -7,9 +7,8 @@ const cometa = document.querySelector('.cometa');
 window.onload = function(){
 	let sky = document.querySelector('#sky');
 			const rocketOne = document.querySelector('#rocket-1');
-		const rocketTwo = document.querySelector('#rocket-2');
-       const rocketThree = document.querySelector('#rocket-3');
-			 const rocketFour = document.querySelector('#cloud-4');
+	  	const rocketTwo = document.querySelector('#rocket-2');
+      const rocketThree = document.querySelector('#rocket-3');
 
 	sky.addEventListener('mousemove',function(e){
 		var pageX = e.clientX - window.innerWidth/2,

@@ -467,11 +467,10 @@ font-size:100px;
 .myHTML
 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 80%;
   height: 100px;
   width: 100px;
-  background-color: red;
   display: none;
 }
 
@@ -481,12 +480,27 @@ font-size:100px;
   top: 0;
   height: 100vh;
   width: 100vw;
-  background-color: green;
+  background-color: #F16529;
   display: none;
 }
 
+.rocket-land
+{
+  position: absolute;
+  top: -100%;
+  width: 30%;
+  animation-name: land;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes land {
+  from {top: -100%;}
+  to{top:100px;}
+}
+
 /* Koniec sekcji latająca rakieta*/
-#jeden {position: absolute; top: 5px; left: 5px; width: 50px; height: 50px; background-color: red}
+
 
 
 /* Sekcja keyframes animation*/

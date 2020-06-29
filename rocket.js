@@ -99,9 +99,6 @@ window.addEventListener('keypress', function(e){
               span.innerHTML = "";
           };
       }, false);
-
-
-  
   }
 })
 
