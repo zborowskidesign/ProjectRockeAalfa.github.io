@@ -4,7 +4,6 @@ let flyRocket = document.querySelector('.fly');
 let myHTML = document.querySelector('.myHTML');
 
 
-
 let up = false,
     right = false,
     down = false,
@@ -59,6 +58,7 @@ function gameLoop(){
   flyRocket.style.left = x + 'px'
   flyRocket.style.top = y + 'px'
   window.requestAnimationFrame(gameLoop)
+  
 }
 window.requestAnimationFrame(gameLoop)
 
