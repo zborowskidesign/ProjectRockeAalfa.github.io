@@ -90,6 +90,7 @@ window.addEventListener('keypress', function(e){
               rect1.y < rect2.y + rect2.height &&
               rect1.height + rect1.y > rect2.y) {
               document.querySelector('.MyHtmlSkill').style.display = 'block';
+              document.querySelector('.overlay-link').href="https://zborowskidesign.github.io/ImageProject.github.io/";
               const exit = document.querySelector(".exit");
               exit.addEventListener('click',function()
           {
@@ -126,6 +127,7 @@ window.addEventListener('keypress', function(e){
               document.querySelector('.boxy').classList.remove("box_1");
               document.querySelector('.boxy').classList.add("box_2");
               document.querySelector('.overlay-text').textContent = "Speech Recognition";
+              document.querySelector('.overlay-link').href="https://zborowskidesign.github.io/speech-recognition/";
               const exitjs = document.querySelector(".exit");  
               exitjs.addEventListener('click',function()
 {

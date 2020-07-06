@@ -25,8 +25,6 @@ main.style.display = 'none';
 bgcBg.style.display = 'block';
 }
 
-
-
 const span = document.querySelector('span');
 window.addEventListener('keypress', function(e){
   if(e.keyCode === 48){
