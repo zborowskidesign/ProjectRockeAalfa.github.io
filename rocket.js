@@ -3,7 +3,6 @@ const controls = document.querySelector('.control');
 let flyRocket = document.querySelector('.fly');
 let myHTML = document.querySelector('.myHTML');
 
-
 let up = false,
     right = false,
     down = false,
@@ -42,7 +41,6 @@ function release(e){
   }
 }
 function gameLoop(){
- // const div = document.querySelector('.fly')
   if (up){
     y = y - 10
   }
@@ -70,8 +68,9 @@ window.addEventListener('keypress', function(e){
   cloudsBgc.style.display = 'block';
   controls.style.display = 'block'
   document.body.style.backgroundColor = "#0074D9";
-  document.querySelector('.myHTML').style.display = 'block'
-  document.querySelector('.myJS').style.display = 'block'
+  document.querySelector('.myHTML').style.display = 'block';
+  document.querySelector('.myJS').style.display = 'block';
+  document.querySelector('.myReact').style.display = 'block'
 
   let kwadrat1 = document.querySelector(".myHTML"), 
             wspolrzedneKwadrat1 = kwadrat1.getBoundingClientRect(),
@@ -97,9 +96,6 @@ window.addEventListener('keypress', function(e){
             HtmlPage.style.display = 'none';
             document.querySelector('.myHTML').style.display = 'none';
           })
-
-
-
 
           }
         
@@ -139,6 +135,41 @@ window.addEventListener('keypress', function(e){
           }
         
       }, false);
+      
+
+      //React Skills
+
+      let kwadrat3 = document.querySelector(".myReact"), 
+      wspolrzedneKwadratReact = kwadrat3.getBoundingClientRect(),
+      wspolrzedneKwadratROcket3 = flyRocket.getBoundingClientRect();
+
+flyRocket.addEventListener('transitionend', function()
+{
+  wspolrzedneKwadratReact = kwadrat3.getBoundingClientRect(),
+  wspolrzedneKwadratROcket3 = flyRocket.getBoundingClientRect();
+    
+    let rect1 = {x: wspolrzedneKwadratReact.left, y: wspolrzedneKwadratReact.top, width: wspolrzedneKwadratReact.width, height: wspolrzedneKwadratReact.height};
+
+    let rect2 = {x: wspolrzedneKwadratROcket3.left, y: wspolrzedneKwadratROcket3.top, width: wspolrzedneKwadratROcket3.width, height: wspolrzedneKwadratROcket3.height};
+    if (rect1.x < rect2.x + rect2.width &&
+        rect1.x + rect1.width > rect2.x &&
+        rect1.y < rect2.y + rect2.height &&
+        rect1.height + rect1.y > rect2.y) {
+        document.querySelector('.MyReactSkill').style.display = 'block';
+        document.querySelector('.boxy').classList.remove("box_1");
+        document.querySelector('.boxy').classList.add("box_3");
+        document.querySelector('.overlay-text').textContent = "Currency Converter";
+        document.querySelector('.overlay-link').href="https://zborowskidesign.github.io/Currency-Converter/#/";
+        const exitjs = document.querySelector(".exit");  
+        exitjs.addEventListener('click',function()
+{
+document.querySelector('.MyReactSkill').style.display = 'none';
+document.querySelector('.myReact').style.display = 'none';
+})
+
+    }
+  
+}, false);
 
     }
 
