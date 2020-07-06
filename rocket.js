@@ -89,6 +89,9 @@ window.addEventListener('keypress', function(e){
               rect1.y < rect2.y + rect2.height &&
               rect1.height + rect1.y > rect2.y) {
               document.querySelector('.MyHtmlSkill').style.display = 'block';
+              document.querySelector('.boxy').classList.add("box_1");
+              document.querySelector('.boxy').classList.remove("box_3");
+              document.querySelector('.boxy').classList.remove("box_2");
               document.querySelector('.overlay-link').href="https://zborowskidesign.github.io/ImageProject.github.io/";
               const exit = document.querySelector(".exit");
               exit.addEventListener('click',function()
@@ -121,6 +124,7 @@ window.addEventListener('keypress', function(e){
               rect1.height + rect1.y > rect2.y) {
               document.querySelector('.MyJSSkill').style.display = 'block';
               document.querySelector('.boxy').classList.remove("box_1");
+              document.querySelector('.boxy').classList.remove("box_3");
               document.querySelector('.boxy').classList.add("box_2");
               document.querySelector('.overlay-text').textContent = "Speech Recognition";
               document.querySelector('.overlay-link').href="https://zborowskidesign.github.io/speech-recognition/";
@@ -157,6 +161,7 @@ flyRocket.addEventListener('transitionend', function()
         rect1.height + rect1.y > rect2.y) {
         document.querySelector('.MyReactSkill').style.display = 'block';
         document.querySelector('.boxy').classList.remove("box_1");
+        document.querySelector('.boxy').classList.remove("box_2");
         document.querySelector('.boxy').classList.add("box_3");
         document.querySelector('.overlay-text').textContent = "Currency Converter";
         document.querySelector('.overlay-link').href="https://zborowskidesign.github.io/Currency-Converter/#/";
