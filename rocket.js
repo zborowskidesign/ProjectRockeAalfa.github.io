@@ -71,35 +71,75 @@ window.addEventListener('keypress', function(e){
   controls.style.display = 'block'
   document.body.style.backgroundColor = "#0074D9";
   document.querySelector('.myHTML').style.display = 'block'
+  document.querySelector('.myJS').style.display = 'block'
 
-  var kwadrat1 = document.querySelector(".myHTML"), //IMO jest szybciej, ale to trza by przetestować
-            span = document.getElementById("kolizja"),
+  let kwadrat1 = document.querySelector(".myHTML"), 
             wspolrzedneKwadrat1 = kwadrat1.getBoundingClientRect(),
             wspolrzedneKwadrat2 =  flyRocket.getBoundingClientRect();
 
-  // Wykrywanie kolizji:
-      //musi być odpalone po transition dla poprawnych obliczeń
       flyRocket.addEventListener('transitionend', function()
       {
-          //współrzędne trzeba aktualizować przy każdym ruchu
           wspolrzedneKwadrat1 = kwadrat1.getBoundingClientRect(),
           wspolrzedneKwadrat2 = flyRocket.getBoundingClientRect();
           
-          var rect1 = {x: wspolrzedneKwadrat1.left, y: wspolrzedneKwadrat1.top, width: wspolrzedneKwadrat1.width, height: wspolrzedneKwadrat1.height};
+          let rect1 = {x: wspolrzedneKwadrat1.left, y: wspolrzedneKwadrat1.top, width: wspolrzedneKwadrat1.width, height: wspolrzedneKwadrat1.height};
 
-          var rect2 = {x: wspolrzedneKwadrat2.left, y: wspolrzedneKwadrat2.top, width: wspolrzedneKwadrat2.width, height: wspolrzedneKwadrat2.height};
+          let rect2 = {x: wspolrzedneKwadrat2.left, y: wspolrzedneKwadrat2.top, width: wspolrzedneKwadrat2.width, height: wspolrzedneKwadrat2.height};
           if (rect1.x < rect2.x + rect2.width &&
               rect1.x + rect1.width > rect2.x &&
               rect1.y < rect2.y + rect2.height &&
               rect1.height + rect1.y > rect2.y) {
-              //span.innerHTML = "Kolizja";
               document.querySelector('.MyHtmlSkill').style.display = 'block';
+              const exit = document.querySelector(".exit");
+              exit.addEventListener('click',function()
+          {
+            HtmlPage.style.display = 'none';
+            document.querySelector('.myHTML').style.display = 'none';
+          })
+
+
+
+
           }
-          else {
-              span.innerHTML = "";
-          };
+        
       }, false);
-  }
+
+      //JS SKILL
+
+      let kwadrat2 = document.querySelector(".myJS"), 
+            wspolrzedneKwadratJS = kwadrat2.getBoundingClientRect(),
+            wspolrzedneKwadratROcket = flyRocket.getBoundingClientRect();
+
+      flyRocket.addEventListener('transitionend', function()
+      {
+        wspolrzedneKwadratJS = kwadrat2.getBoundingClientRect(),
+        wspolrzedneKwadratROcket = flyRocket.getBoundingClientRect();
+          
+          let rect1 = {x: wspolrzedneKwadratJS.left, y: wspolrzedneKwadratJS.top, width: wspolrzedneKwadratJS.width, height: wspolrzedneKwadratJS.height};
+
+          let rect2 = {x: wspolrzedneKwadratROcket.left, y: wspolrzedneKwadratROcket.top, width: wspolrzedneKwadratROcket.width, height: wspolrzedneKwadratROcket.height};
+          if (rect1.x < rect2.x + rect2.width &&
+              rect1.x + rect1.width > rect2.x &&
+              rect1.y < rect2.y + rect2.height &&
+              rect1.height + rect1.y > rect2.y) {
+              document.querySelector('.MyJSSkill').style.display = 'block';
+              document.querySelector('.boxy').classList.remove("box_1");
+              document.querySelector('.boxy').classList.add("box_2");
+              document.querySelector('.overlay-text').textContent = "Speech Recognition";
+              const exitjs = document.querySelector(".exit");  
+              exitjs.addEventListener('click',function()
+{
+  document.querySelector('.MyJSSkill').style.display = 'none';
+   document.querySelector('.myJS').style.display = 'none';
+})
+
+
+          }
+        
+      }, false);
+
+    }
+
 })
 
 
