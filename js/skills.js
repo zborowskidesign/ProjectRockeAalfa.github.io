@@ -4,7 +4,7 @@ const JSPage = document.querySelector(".MyJSSkill");
 
 
 element.addEventListener("click", toggleDoor);
-function toggleDoor() {
-  element.classList.toggle("doorOpen");
+  function toggleDoor() {
+    element.classList.toggle("doorOpen");
 }
 

@@ -9,7 +9,8 @@ let up = false,
     left = false,
     x = window.innerWidth/2-130/2,
     y = window.innerHeight/2-130/2
-document.addEventListener('keydown',press)
+document.addEventListener('keydown', press)
+
 function press(e){
   if(e.keyCode == 38)
   if (e.keyCode == 38 /* up */ || e.keyCode == 87 /* w */ || e.keyCode == 90 /* z */){
@@ -40,6 +41,7 @@ function release(e){
     left = false
   }
 }
+
 function gameLoop(){
   if (up){
     y = y - 10
@@ -58,6 +60,7 @@ function gameLoop(){
   window.requestAnimationFrame(gameLoop)
   
 }
+
 window.requestAnimationFrame(gameLoop)
 
 window.addEventListener('keypress', function(e){
@@ -70,20 +73,21 @@ window.addEventListener('keypress', function(e){
   document.body.style.backgroundColor = "#0074D9";
   document.querySelector('.myHTML').style.display = 'block';
   document.querySelector('.myJS').style.display = 'block';
-  document.querySelector('.myReact').style.display = 'block'
+  document.querySelector('.myReact').style.display = 'block';
+  document.querySelector('.esc').style.display = 'block';
 
   let kwadrat1 = document.querySelector(".myHTML"), 
-            wspolrzedneKwadrat1 = kwadrat1.getBoundingClientRect(),
-            wspolrzedneKwadrat2 =  flyRocket.getBoundingClientRect();
+        wspolrzedneKwadrat1 = kwadrat1.getBoundingClientRect(),
+        wspolrzedneKwadrat2 =  flyRocket.getBoundingClientRect();
 
       flyRocket.addEventListener('transitionend', function()
       {
-          wspolrzedneKwadrat1 = kwadrat1.getBoundingClientRect(),
-          wspolrzedneKwadrat2 = flyRocket.getBoundingClientRect();
+        wspolrzedneKwadrat1 = kwadrat1.getBoundingClientRect(),
+        wspolrzedneKwadrat2 = flyRocket.getBoundingClientRect();
           
-          let rect1 = {x: wspolrzedneKwadrat1.left, y: wspolrzedneKwadrat1.top, width: wspolrzedneKwadrat1.width, height: wspolrzedneKwadrat1.height};
+        let rect1 = {x: wspolrzedneKwadrat1.left, y: wspolrzedneKwadrat1.top, width: wspolrzedneKwadrat1.width, height: wspolrzedneKwadrat1.height};
 
-          let rect2 = {x: wspolrzedneKwadrat2.left, y: wspolrzedneKwadrat2.top, width: wspolrzedneKwadrat2.width, height: wspolrzedneKwadrat2.height};
+        let rect2 = {x: wspolrzedneKwadrat2.left, y: wspolrzedneKwadrat2.top, width: wspolrzedneKwadrat2.width, height: wspolrzedneKwadrat2.height};
           if (rect1.x < rect2.x + rect2.width &&
               rect1.x + rect1.width > rect2.x &&
               rect1.y < rect2.y + rect2.height &&
@@ -100,7 +104,7 @@ window.addEventListener('keypress', function(e){
             document.querySelector('.myHTML').style.display = 'none';
           })
 
-          }
+        }
         
       }, false);
 
@@ -118,7 +122,7 @@ window.addEventListener('keypress', function(e){
           let rect1 = {x: wspolrzedneKwadratJS.left, y: wspolrzedneKwadratJS.top, width: wspolrzedneKwadratJS.width, height: wspolrzedneKwadratJS.height};
 
           let rect2 = {x: wspolrzedneKwadratROcket.left, y: wspolrzedneKwadratROcket.top, width: wspolrzedneKwadratROcket.width, height: wspolrzedneKwadratROcket.height};
-          if (rect1.x < rect2.x + rect2.width &&
+            if (rect1.x < rect2.x + rect2.width &&
               rect1.x + rect1.width > rect2.x &&
               rect1.y < rect2.y + rect2.height &&
               rect1.height + rect1.y > rect2.y) {
@@ -135,12 +139,10 @@ window.addEventListener('keypress', function(e){
    document.querySelector('.myJS').style.display = 'none';
 })
 
-
-          }
+  }
         
-      }, false);
+ }, false);
       
-
       //React Skills
 
       let kwadrat3 = document.querySelector(".myReact"), 
