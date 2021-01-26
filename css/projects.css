@@ -1,647 +1,646 @@
-.doorOpen
-{
-  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+.doorOpen {
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px)
+    rotateY(-105deg);
 }
 
 .portfolio {
-    margin-top: 50px;     
-}
-    
-.boxy{
-    position: relative;
-    display: block;
-    width: 40%;
-    height: 300px;
-    margin: 0 auto 2em;
-    padding: 0;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow:0px 25px 50px rgba(0,0,0,.5);
-    overflow:hidden;
-    transition:all .4s ease;
+  margin-top: 50px;
 }
 
-.portfolio h3{
-    margin-bottom: 30px;
-    color: grey;
-    font-family:"Dancing Script";
-    font-size: 7em;
+.boxy {
+  position: relative;
+  display: block;
+  width: 40%;
+  height: 300px;
+  margin: 0 auto 2em;
+  padding: 0;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
-.figure{
-    color: white;
-    font-family: "Dancing Script";
-    font-size: 3em; 
-    padding: 5%;     
+.portfolio h3 {
+  margin-bottom: 30px;
+  color: grey;
+  font-family: "Dancing Script";
+  font-size: 7em;
 }
 
-.overlay_1{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    z-index:10;
+.figure {
+  color: white;
+  font-family: "Dancing Script";
+  font-size: 3em;
+  padding: 5%;
+}
+
+.overlay_1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
 }
 
 .overlay_1:after {
-    content: '';
-    width: 200%;
-    border-radius: 10px;
-    height: 100%;
-    background-color: #202020;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    z-index: -10;
-    left: 0;
-    transition: all .3s ease;
+  content: "";
+  width: 200%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #202020;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  left: 0;
+  transition: all 0.3s ease;
 }
 
 .overlay-text {
-    position: relative;
-    top:-200px;
-    margin-bottom:1em;
-    margin-top:3em;
-    font-family: "Montserrat";
-    font-size: 2.25em;
-    font-weight: 200;
-    color:white;
-    text-align: center;
-    letter-spacing:5px;
-    transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
+  position: relative;
+  top: -200px;
+  margin-bottom: 1em;
+  margin-top: 3em;
+  font-family: "Montserrat";
+  font-size: 2.25em;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
 }
 
-.overlay-link{
-    position: relative;
-    display: block;
-    width: 60%;
-    top: 220px;
-    padding: 10px;
-    margin: 0 auto;
-    font-family: "Montserrat";
-    color: white;
-    letter-spacing: 3px;
-    text-decoration: none;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 3px;
-    font-size: 1.25em;
-    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+.overlay-link {
+  position: relative;
+  display: block;
+  width: 60%;
+  top: 220px;
+  padding: 10px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 1.25em;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
 }
 
-.overlay-link:hover{
-    background-color: white;
-    color:#202020;
-    text-decoration: none;
+.overlay-link:hover {
+  background-color: white;
+  color: #202020;
+  text-decoration: none;
 }
-     
+
 .boxy:hover .overlay-text {
-    top: 0;
+  top: 0;
 }
 
-.boxy:hover .overlay-link{
-    top: 0;
+.boxy:hover .overlay-link {
+  top: 0;
 }
 
 .boxy:hover .overlay_1:after {
-    opacity: .75;
+  opacity: 0.75;
 }
-    
-.box_1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: url('img/gifImage.gif');
-}
-.box_2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: url('img/gifSpeech.gif');
- }
 
-.box_3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: url('img/reactGif.gif');
+.box_1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("img/gifImage.gif");
+}
+.box_2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("img/gifSpeech.gif");
+}
+
+.box_3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("img/reactGif.gif");
 }
 
 .portfolioJS {
-    margin-top: 50px;
-          
+  margin-top: 50px;
 }
 
-.boxyJS{
-    position: relative;
-    display: block;
-    width: 40%;
-    height: 300px;
-    margin: 0 auto 2em;
-    padding: 0;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow:0px 25px 50px rgba(0,0,0,.5);
-    overflow:hidden;
-    transition:all .4s ease;
+.boxyJS {
+  position: relative;
+  display: block;
+  width: 40%;
+  height: 300px;
+  margin: 0 auto 2em;
+  padding: 0;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
-.portfolioJS h3{
-    margin-bottom: 30px;
-    color: grey;
-    font-family:"Dancing Script";
-    font-size: 7em;
+.portfolioJS h3 {
+  margin-bottom: 30px;
+  color: grey;
+  font-family: "Dancing Script";
+  font-size: 7em;
 }
 
-.figureJS{
-    color: white;
-    font-family: "Dancing Script";
-    font-size: 3em; 
-    padding: 5%;      
+.figureJS {
+  color: white;
+  font-family: "Dancing Script";
+  font-size: 3em;
+  padding: 5%;
 }
 
-.overlay_1JS{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    z-index:10;
+.overlay_1JS {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
 }
 
 .overlay_1JS:after {
-    content: '';
-    width: 200%;
-    border-radius: 10px;
-    height: 100%;
-    background-color: #202020;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    z-index: -10;
-    left: 0;
-    transition: all .3s ease;
+  content: "";
+  width: 200%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #202020;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  left: 0;
+  transition: all 0.3s ease;
 }
 
 .overlay-textJS {
-    position: relative;
-    top:-200px;
-    margin-bottom:1em;
-    margin-top:3em;
-    font-family: "Montserrat";
-    font-size: 2.25em;
-    font-weight: 200;
-    color:white;
-    text-align: center;
-    letter-spacing:5px;
-    transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
+  position: relative;
+  top: -200px;
+  margin-bottom: 1em;
+  margin-top: 3em;
+  font-family: "Montserrat";
+  font-size: 2.25em;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
 }
 
-.overlay-linkJS{
-    position: relative;
-    display: block;
-    width: 60%;
-    top: 220px;
-    padding: 10px;
-    margin: 0 auto;
-    font-family: "Montserrat";
-    color: white;
-    letter-spacing: 3px;
-    text-decoration: none;
-    text-align: center;
-    border: 2px solid white;
-    border-radius: 3px;
-    font-size: 1.25em;
-    transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+.overlay-linkJS {
+  position: relative;
+  display: block;
+  width: 60%;
+  top: 220px;
+  padding: 10px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 1.25em;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
 }
 
-.overlay-linkJS:hover{
-    background-color: white;
-    color:#202020;
-    text-decoration: none;
+.overlay-linkJS:hover {
+  background-color: white;
+  color: #202020;
+  text-decoration: none;
 }
-       
+
 .boxyJS:hover .overlay-textJS {
-    top: 0;
+  top: 0;
 }
 
-.boxyJS:hover .overlay-linkJS{
-     top: 0;
+.boxyJS:hover .overlay-linkJS {
+  top: 0;
 }
 
 .boxyJS:hover .overlay_1JS:after {
-    opacity: .75;
+  opacity: 0.75;
 }
-      
-.box_1JS{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: none;
+
+.box_1JS {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: none;
 }
-  
-    
+
 /*keyframes animation*/
 @-webkit-keyframes drift {
   from {
-      left: 120%;
+    left: 120%;
   }
   to {
-      left: -25%;
+    left: -25%;
   }
 }
 @-moz-keyframes drift {
   from {
-      left: 120%;
+    left: 120%;
   }
   to {
-      left: -25%;
+    left: -25%;
   }
 }
 @keyframes drift {
   from {
-      left: 120%;
+    left: 120%;
   }
   to {
-      left: -25%;
+    left: -25%;
   }
 }
 @-webkit-keyframes driftBg {
   0% {
-      left: 50%;
-      opacity: 0
+    left: 50%;
+    opacity: 0;
   }
   3% {
-      left: 48%;
-      opacity: .7
+    left: 48%;
+    opacity: 0.7;
   }
   100% {
-      left: -25%;
-      opacity: .7;
+    left: -25%;
+    opacity: 0.7;
   }
 }
 @-moz-keyframes driftBg {
   0% {
-      left: 50%;
-      opacity: 0
+    left: 50%;
+    opacity: 0;
   }
   3% {
-      left: 48%;
-      opacity: .7
+    left: 48%;
+    opacity: 0.7;
   }
   100% {
-      left: -25%;
-      opacity: .7;
+    left: -25%;
+    opacity: 0.7;
   }
 }
 @keyframes driftBg {
   0% {
-      left: 50%;
-      opacity: 0
+    left: 50%;
+    opacity: 0;
   }
   3% {
-      left: 48%;
-      opacity: .7
+    left: 48%;
+    opacity: 0.7;
   }
   100% {
-      left: -25%;
-      opacity: .7;
+    left: -25%;
+    opacity: 0.7;
   }
 }
 @-webkit-keyframes driftBg2 {
   0% {
-      left: 20%;
-      opacity: 0
+    left: 20%;
+    opacity: 0;
   }
   3% {
-      left: 19%;
-      opacity: .7
+    left: 19%;
+    opacity: 0.7;
   }
   100% {
-      left: -25%;
-      opacity: .7;
+    left: -25%;
+    opacity: 0.7;
   }
 }
 @-moz-keyframes driftBg2 {
   0% {
-      left: 20%;
-      opacity: 0
+    left: 20%;
+    opacity: 0;
   }
   3% {
-      left: 19%;
-      opacity: .7
+    left: 19%;
+    opacity: 0.7;
   }
   100% {
-      left: -25%;
-      opacity: .7;
+    left: -25%;
+    opacity: 0.7;
   }
 }
 @keyframes driftBg2 {
   0% {
-      left: 20%;
-      opacity: 0
+    left: 20%;
+    opacity: 0;
   }
   3% {
-      left: 19%;
-      opacity: .7
+    left: 19%;
+    opacity: 0.7;
   }
   100% {
-      left: -25%;
-      opacity: .7;
+    left: -25%;
+    opacity: 0.7;
   }
 }
 @-webkit-keyframes driftBg3 {
   0% {
-      left: 90%;
-      opacity: 0
+    left: 90%;
+    opacity: 0;
   }
   2% {
-      left: 88%;
-      opacity: .65
+    left: 88%;
+    opacity: 0.65;
   }
   100% {
-      left: -25%;
-      opacity: .65;
+    left: -25%;
+    opacity: 0.65;
   }
 }
 @-moz-keyframes driftBg3 {
   0% {
-      left: 90%;
-      opacity: 0
+    left: 90%;
+    opacity: 0;
   }
   2% {
-      left: 88%;
-      opacity: .65
+    left: 88%;
+    opacity: 0.65;
   }
   100% {
-      left: -25%;
-      opacity: .65;
+    left: -25%;
+    opacity: 0.65;
   }
 }
 @keyframes driftBg3 {
   0% {
-      left: 90%;
-      opacity: 0
+    left: 90%;
+    opacity: 0;
   }
   2% {
-      left: 88%;
-      opacity: .65
+    left: 88%;
+    opacity: 0.65;
   }
   100% {
-      left: -25%;
-      opacity: .65;
+    left: -25%;
+    opacity: 0.65;
   }
 }
 
-
-@keyframes libot{
- 0%{
-  transform: rotate(0deg);
-} 50% {
-  transform: rotate(50deg);
-}
- 100%{
-  transform: rotate(360deg);
-}
+@keyframes libot {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes move-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 
-@keyframes cometStart{
-0%{
-top:-1000px;
-right:-2000px;
-}
-100%{
-top:30%;
-right:40%;
-}
+@keyframes cometStart {
+  0% {
+    top: -1000px;
+    right: -2000px;
+  }
+  100% {
+    top: 30%;
+    right: 40%;
+  }
 }
 
 @keyframes slide {
-0% {
-  transform:translateX(-25%);
-}
-100% {
-  transform:translateX(25%);
-}
-}
-.me{
-animation: image 5s linear;
-animation-duration: 1;
-}
-
-@keyframes image{
-0%{
-transform: rotateY(0);
-
-}
-100%{
-transform: rotateY(360deg);
-}
-}
-
-
-  @-webkit-keyframes puff {
-      0% {
-          top: 100%;
-          width: 0px;
-          padding-bottom: 0px;
-      }
-      100% {
-          top: 50%;
-          width: 100%;
-          padding-bottom: 100%;
-      }	
+  0% {
+    transform: translateX(-25%);
   }
-  @keyframes puff {
-      0% {
-          top: 100%;
-          width: 0px;
-          padding-bottom: 0px;
-      }
-      100% {
-          top: 50%;
-          width: 100%;
-          padding-bottom: 100%;
-      }	
+  100% {
+    transform: translateX(25%);
   }
+}
+.me {
+  animation: image 5s linear;
+  animation-duration: 1;
+}
 
+@keyframes image {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes puff {
+  0% {
+    top: 100%;
+    width: 0px;
+    padding-bottom: 0px;
+  }
+  100% {
+    top: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@keyframes puff {
+  0% {
+    top: 100%;
+    width: 0px;
+    padding-bottom: 0px;
+  }
+  100% {
+    top: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
 
 @-webkit-keyframes init {
   0% {
-      width: 0px;
-      height: 0px;
+    width: 0px;
+    height: 0px;
   }
   100% {
-      width: 56px;
-      height: 56px;
-      margin-top: 0px;
-      opacity: 1;
-  }	
+    width: 56px;
+    height: 56px;
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 @keyframes init {
   0% {
-      width: 0px;
-      height: 0px;
+    width: 0px;
+    height: 0px;
   }
   100% {
-      width: 56px;
-      height: 56px;
-      margin-top: 0px;
-      opacity: 1;
-  }	
+    width: 56px;
+    height: 56px;
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 @-webkit-keyframes puff_portrait {
   0% {
-      top: 100%;
-      height: 0px;
-      padding: 0px;
+    top: 100%;
+    height: 0px;
+    padding: 0px;
   }
   100% {
-      top: 50%;
-      height: 100%;
-      padding: 0px 100%;
-  }	
+    top: 50%;
+    height: 100%;
+    padding: 0px 100%;
+  }
 }
 @keyframes puff_portrait {
   0% {
-      top: 100%;
-      height: 0px;
-      padding: 0px;
+    top: 100%;
+    height: 0px;
+    padding: 0px;
   }
   100% {
-      top: 50%;
-      height: 100%;
-      padding: 0px 100%;
-  }	
+    top: 50%;
+    height: 100%;
+    padding: 0px 100%;
+  }
 }
 @-webkit-keyframes puff_landscape {
   0% {
-      top: 100%;
-      width: 0px;
-      padding-bottom: 0px;
+    top: 100%;
+    width: 0px;
+    padding-bottom: 0px;
   }
   100% {
-      top: 50%;
-      width: 100%;
-      padding-bottom: 100%;
-  }	
+    top: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+  }
 }
 @keyframes puff_landscape {
   0% {
-      top: 100%;
-      width: 0px;
-      padding-bottom: 0px;
+    top: 100%;
+    width: 0px;
+    padding-bottom: 0px;
   }
   100% {
-      top: 50%;
-      width: 100%;
-      padding-bottom: 100%;
-  }	
+    top: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+  }
 }
 @-webkit-keyframes borderRadius {
   0% {
-      -webkit-border-radius: 50%;
+    -webkit-border-radius: 50%;
   }
   100% {
-      -webkit-border-radius: 0px;
-  }	
+    -webkit-border-radius: 0px;
+  }
 }
 @keyframes borderRadius {
   0% {
-      -webkit-border-radius: 50%;
+    -webkit-border-radius: 50%;
   }
   100% {
-      border-radius: 0px;
-  }	
+    border-radius: 0px;
+  }
 }
 @-webkit-keyframes moveDown {
   0% {
-         top: 50%;
+    top: 50%;
   }
   50% {
-     top: 40%;
+    top: 40%;
   }
   100% {
-     top: 100%;
-  }	
+    top: 100%;
+  }
 }
 @keyframes moveDown {
   0% {
-         top: 50%;
+    top: 50%;
   }
   50% {
-     top: 40%;
+    top: 40%;
   }
   100% {
-     top: 100%;
-  }	
+    top: 100%;
+  }
 }
 @-webkit-keyframes moveUp {
   0% {
-      background: #2980b9;
-      top: 100%;
+    background: #2980b9;
+    top: 100%;
   }
   50% {
-     top: 40%;
+    top: 40%;
   }
   100% {
-     top: 50%;
-     background: #E0E0E0;
-  }	
+    top: 50%;
+    background: #e0e0e0;
+  }
 }
 @keyframes moveUp {
   0% {
-      background: #2980b9;;
-      top: 100%;
+    background: #2980b9;
+    top: 100%;
   }
   50% {
-     top: 40%;
+    top: 40%;
   }
   100% {
-     top: 50%;
-     background: #E0E0E0;
-  }	
+    top: 50%;
+    background: #e0e0e0;
+  }
 }
 
 @keyframes materia_portrait {
   0% {
-      background: white;
+    background: white;
   }
   50% {
-      border-radius: 4px;
+    border-radius: 4px;
   }
   100% {
-      width: 880px;
-      height: 440px;
-      background: royalblue;
-      border-radius: 4px;
+    width: 880px;
+    height: 440px;
+    background: royalblue;
+    border-radius: 4px;
   }
 }
 @-webkit-keyframes moveIn {
   0% {
-      margin-top: 50px;
-      opacity: 0;
+    margin-top: 50px;
+    opacity: 0;
   }
-  100% { 
-      opacity: 1;
-      margin-top: -20px;
-  }	
+  100% {
+    opacity: 1;
+    margin-top: -20px;
+  }
 }
 @keyframes moveIn {
   0% {
-      margin-top: 50px;
-      opacity: 0;
+    margin-top: 50px;
+    opacity: 0;
   }
-  100% { 
-      opacity: 1;
-      margin-top: -20px;
-  }	
+  100% {
+    opacity: 1;
+    margin-top: -20px;
+  }
 }

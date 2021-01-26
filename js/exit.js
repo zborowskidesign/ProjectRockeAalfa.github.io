@@ -1,15 +1,9 @@
-const escape = document.querySelector('.esc')
-
+const escape = document.querySelector(".esc");
 
 function getAway() {
+  setTimeout(function () {
+    window.location.reload(true);
+  }, 1000);
+}
 
-    setTimeout(function(){
-        window.location.reload(true);
-      }, 1000);
-
-  }
-
-
-escape.addEventListener('click', getAway)
-
-
+escape.addEventListener("click", getAway);
